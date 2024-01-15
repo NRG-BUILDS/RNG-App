@@ -7,7 +7,6 @@ const RNG = () => {
   const [displayNum, setDisplayNum] = useState(getRndInteger(1, 10));
   const [isPending, setIsPending] = useState(false);
   const [results, setResults] = useState([]);
-  let count = 0;
   const startGeneration = (callBack) => {
     setIsPending(true);
     setTimeout(() => {
